@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head >
+  <body>
+    <form onsubmit="<audio src='{{ audio_url }}audio.mp3' controls></audio>"class="form" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
